@@ -2,7 +2,7 @@ const client = require('./connection.js')
 const express = require('express');
 const app = express();
 
-var port_number = server.listen(process.env.PORT || 3000);
+var port_number = process.env.PORT || 3000;
 app.listen(port_number);
 
 client.connect();
