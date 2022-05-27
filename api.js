@@ -17,6 +17,10 @@ app.get('/api/branch', (req, res)=>{
     client.end;
 })
 
+app.get('/', (req, res)=>{
+            res.send("Hello");
+})
+
 
 app.get('/api/search', (req, res)=>{
     let query = res.body;
